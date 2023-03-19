@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:18px;
+    font-family: 'Outfit', sans-serif;
+    background-color:hsl(185, 75%, 39%);
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+   background-position-x:-45rem,9rem;
+   background-position-y:-42rem,20rem;
+    padding:1.5em;
+    min-height:100vh;
+    display:grid;
+    place-content: center;
+    /* display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1.5rem; */
+}
+
+.container{
+    border-radius:15px;
+    max-width:500px;
+    background-color:white;
+    /* margin-top:90px; */
+    position:relative;
+}
+
+.upper-section img{
+    border-radius:15px 15px 0 0;
+    width:100%;
+}
+
+.container img{
+    display:block;
+    max-width:100%;
+}
+
+.lower-section img{
+    height:auto;
+    max-width: 100px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:50%;
+    border:5px solid white;
+    margin-top:-50px;
+}
+
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0.7rem;
+}
+
+.content-header{
+    font-weight:bolder;
+    margin-top:3.3em;
+    text-align:center;
+    color:hsl(229, 23%, 23%);
+}
+
+.content-subheader{
+    margin-top: 3.3em;
+    color:hsl(0, 0%, 59%);
+    font-weight:lighter;
+}
+
+.location{
+    text-align:center;
+    margin-top:0.4em;
+    margin-bottom:3em;
+    color:hsl(0, 0%, 59%);
+}
+
+.footer{
+    padding:15px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align:center;
+}
+
+.footer-heading{
+    color:hsl(229, 23%, 23%);
+}
+
+.footer-subheading{
+    color: hsl(0, 0%, 59%);
+    font-weight:lighter;
+    font-size:14px;
+    letter-spacing:0.5px;
+}
+
+@media screen and (min-width:425px){
+    body{
+        background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+       background-position-x:-44rem,8rem;
+       background-position-y:-42rem,21rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    body{
+        background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+       background-position-x:-35rem,25rem;
+       background-position-y:-40rem,20rem;
+    }
+}
